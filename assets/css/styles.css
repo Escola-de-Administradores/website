@@ -592,3 +592,23 @@ img { max-width: 100%; display: block; }
   .sales-mobile-cta strong { color: var(--blue-950); font-size: 1.2rem; }
   .sales-mobile-cta a { padding: 11px 15px; border-radius: 11px; background: var(--blue-800); color: var(--white); font-size: .76rem; font-weight: 900; }
 }
+
+/* Glossário Essencial — página de vendas */
+.cover-gloss { background: linear-gradient(150deg, #0b3fcb, #1557e7 52%, #071a4a); }
+.ebook-card-link { display: block; color: inherit; }
+.ebook-card-link:focus-visible { outline: 3px solid rgba(36,116,242,.34); outline-offset: 4px; }
+.glossary-product-card { overflow: hidden; }
+.glossary-product-image { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 20px; background: var(--blue-50); }
+.glossary-feature-grid { grid-template-columns: repeat(3, 1fr); }
+.glossary-offer-title { display: block; margin-top: 11px; color: var(--blue-950); font-size: 2rem; line-height: 1.05; letter-spacing: -.045em; }
+.glossary-checkout-box > small:not(.sales-secure-note) { margin-top: 23px; color: var(--muted); font-size: .68rem; }
+.post-purchase-bar { background: linear-gradient(90deg, #071a4a, #0b3fcb); }
+.glossary-mobile-cta div small { color: #8a96a7; font-size: .61rem; }
+.glossary-mobile-cta div strong { font-size: .92rem; }
+
+@media (min-width: 1025px) {
+  .ebook-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 760px) {
+  .glossary-feature-grid { grid-template-columns: 1fr; }
+}

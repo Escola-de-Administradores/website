@@ -1,14 +1,12 @@
 /*
   LINKS DE CHECKOUT — KIRVANO
 
-  Substitua as strings vazias abaixo pelos links reais de checkout.
-  Exemplo:
-  "curso-reforma": "https://pay.kirvano.com/SEU-CODIGO"
-
-  Enquanto um link permanecer vazio, o botão correspondente aparece desativado como "Em breve".
+  Centralize aqui os links comerciais usados em todo o site.
+  A página de vendas continua separada do checkout para facilitar futuras trocas de oferta.
 */
 window.EA_STORE = {
-  "curso-reforma": "",
+  "curso-reforma": "https://pay.kirvano.com/78a9cb9c-85b7-418f-80f6-bef802bc9333",
+  "glossario-reforma": "https://pay.kirvano.com/252da200-6a6a-4b96-afcb-1792feddbbac",
   "ebook-reforma": "",
   "ebook-dre": "",
   "ebook-fluxo-caixa": ""

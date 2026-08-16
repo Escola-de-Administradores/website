@@ -3,6 +3,17 @@ const menu = document.querySelector('[data-menu]');
 const currentYear = document.getElementById('currentYear');
 const checkoutLinks = document.querySelectorAll('[data-checkout]');
 
+const pageParams = new URLSearchParams(window.location.search);
+const isCoursePostPurchase = pageParams.get('origem') === 'pos-compra-curso';
+
+document.querySelectorAll('[data-post-purchase-only]').forEach((element) => {
+  element.hidden = !isCoursePostPurchase;
+});
+
+document.querySelectorAll('[data-standard-only]').forEach((element) => {
+  element.hidden = isCoursePostPurchase;
+});
+
 if (currentYear) currentYear.textContent = new Date().getFullYear();
 
 menuToggle?.addEventListener('click', () => {
